@@ -6,9 +6,9 @@ Version:	0.2
 Release:	0.1
 License:	GPL
 Group:		Base
-Source0:	http://dl.sourceforge.net/pam-mysql/%{modulename}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/pam-ssh-agent/%{modulename}-%{version}.tar.gz
 # Source0-md5:	3514f813c6df58de28cc56c7c76566d7
-URL:		http://sourceforge.net/projects/pam_ssh_agent
+URL:		http://sourceforge.net/projects/pam-ssh-agent/
 BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
