@@ -1,6 +1,6 @@
 %define 	modulename pam_ssh_agent
 Summary:	PAM module for ssh agent auth 
-Summary(pl):	modu³ PAM uwierzytelniaj±cy u¿ytkowników poprzez agenta ssh 
+Summary(pl):	Modu³ PAM uwierzytelniaj±cy u¿ytkowników poprzez agenta ssh 
 Name:		pam-%{modulename}
 Version:	0.2
 Release:	0.1
@@ -13,11 +13,12 @@ BuildRequires:	pam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-pam_ssh_agent is a PAM module that spawns an ssh-agent and 
-adds identities using the password supplied by the user at login. 
+pam_ssh_agent is a PAM module that spawns an ssh-agent and adds
+identities using the password supplied by the user at login. 
 
 %description -l pl
-
+pam_ssh_agent to modu³ PAM uruchamiaj±cy agenta ssh i dodaj±cy
+to¿samo¶æ przy u¿yciu has³a podanego przez u¿ytkownika przy logowaniu.
 
 %prep
 %setup -q -n %{modulename}-%{version}
@@ -30,7 +31,7 @@ adds identities using the password supplied by the user at login.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D %{modulename}.so $RPM_BUILD_ROOT/lib/security/%{modulename}.so
+install -D %{modulename}.so $RPM_BUILD_ROOT/%{_lib}/security/%{modulename}.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog
-%attr(755,root,root) /lib/security/%{modulename}.so
+%attr(755,root,root) /%{_lib}/security/%{modulename}.so
