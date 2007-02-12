@@ -1,6 +1,6 @@
 %define 	modulename pam_ssh_agent
 Summary:	PAM module for ssh agent auth 
-Summary(pl):	Modu≥ PAM uwierzytelniaj±cy uøytkownikÛw poprzez agenta ssh 
+Summary(pl.UTF-8):   Modu≈Ç PAM uwierzytelniajƒÖcy u≈ºytkownik√≥w poprzez agenta ssh 
 Name:		pam-%{modulename}
 Version:	0.2
 Release:	0.1
@@ -16,9 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 pam_ssh_agent is a PAM module that spawns an ssh-agent and adds
 identities using the password supplied by the user at login. 
 
-%description -l pl
-pam_ssh_agent to modu≥ PAM uruchamiaj±cy agenta ssh i dodaj±cy
-toøsamo∂Ê przy uøyciu has≥a podanego przez uøytkownika przy logowaniu.
+%description -l pl.UTF-8
+pam_ssh_agent to modu≈Ç PAM uruchamiajƒÖcy agenta ssh i dodajƒÖcy
+to≈ºsamo≈õƒá przy u≈ºyciu has≈Ça podanego przez u≈ºytkownika przy logowaniu.
 
 %prep
 %setup -q -n %{modulename}-%{version}
