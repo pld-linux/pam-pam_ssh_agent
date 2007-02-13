@@ -1,6 +1,6 @@
 %define 	modulename pam_ssh_agent
 Summary:	PAM module for ssh agent auth 
-Summary(pl.UTF-8):   Moduł PAM uwierzytelniający użytkowników poprzez agenta ssh 
+Summary(pl.UTF-8):	Moduł PAM uwierzytelniający użytkowników poprzez agenta ssh 
 Name:		pam-%{modulename}
 Version:	0.2
 Release:	0.1
